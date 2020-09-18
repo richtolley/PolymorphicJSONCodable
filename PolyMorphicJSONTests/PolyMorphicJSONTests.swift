@@ -24,8 +24,8 @@ class PolyMorphicJSONTests: XCTestCase {
 
     do {
       let data = try Data(contentsOf: dataURL)
-      let payload = try JSONDecoder().decode(Payload.self, from: data)
-      XCTAssertNotNil((payload.body as? PayloadVersion1), "incorrect type of payload")
+      let payload = try JSONDecoder().decode(PolymorphicPayloadContainer.self, from: data)
+      XCTAssertNotNil((payload.body as? PayloadBodyVersion1), "incorrect type of payload")
     } catch let error {
       XCTFail("failed to deserialize json because: \(error.localizedDescription)")
     }
@@ -39,8 +39,8 @@ class PolyMorphicJSONTests: XCTestCase {
 
     do {
       let data = try Data(contentsOf: dataURL)
-      let payload = try JSONDecoder().decode(Payload.self, from: data)
-      XCTAssertNotNil((payload.body as? PayloadVersion2), "incorrect type of payload")
+      let payload = try JSONDecoder().decode(PolymorphicPayloadContainer.self, from: data)
+      XCTAssertNotNil((payload.body as? PayloadBodyVersion2), "incorrect type of payload")
     } catch let error {
       XCTFail("failed to deserialize json because: \(error.localizedDescription)")
     }
@@ -54,7 +54,7 @@ class PolyMorphicJSONTests: XCTestCase {
 
     do {
       let data = try Data(contentsOf: dataURL)
-      _ = try JSONDecoder().decode(Payload.self, from: data)
+      _ = try JSONDecoder().decode(PolymorphicPayloadContainer.self, from: data)
       XCTFail("should not succeed")
     } catch let error {
 
@@ -70,7 +70,7 @@ class PolyMorphicJSONTests: XCTestCase {
 
     do {
       let data = try Data(contentsOf: dataURL)
-      _ = try JSONDecoder().decode(Payload.self, from: data)
+      _ = try JSONDecoder().decode(PolymorphicPayloadContainer.self, from: data)
       XCTFail("should not succeed")
     } catch let error {
 

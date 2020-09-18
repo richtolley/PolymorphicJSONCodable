@@ -19,6 +19,7 @@
 		21348F472514EE6F00324485 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 21348E8825125ACD00324485 /* test1.json */; };
 		21348F492514F17200324485 /* test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 21348F482514F17200324485 /* test3.json */; };
 		21348F4B2514F1FA00324485 /* test4.json in Resources */ = {isa = PBXBuildFile; fileRef = 21348F4A2514F1FA00324485 /* test4.json */; };
+		21348F4D2514F34400324485 /* PayloadBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21348F4C2514F34400324485 /* PayloadBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		21348F3F2514EBC900324485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21348F482514F17200324485 /* test3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test3.json; sourceTree = "<group>"; };
 		21348F4A2514F1FA00324485 /* test4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test4.json; sourceTree = "<group>"; };
+		21348F4C2514F34400324485 /* PayloadBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,7 @@
 		21348E6F251258CB00324485 /* PolyMorphicJSON */ = {
 			isa = PBXGroup;
 			children = (
-				21348E84251258D500324485 /* Codables */,
+				21348E84251258D500324485 /* Decodables */,
 				21348E70251258CB00324485 /* AppDelegate.swift */,
 				21348E72251258CB00324485 /* SceneDelegate.swift */,
 				21348E74251258CB00324485 /* ViewController.swift */,
@@ -101,12 +103,13 @@
 			path = PolyMorphicJSON;
 			sourceTree = "<group>";
 		};
-		21348E84251258D500324485 /* Codables */ = {
+		21348E84251258D500324485 /* Decodables */ = {
 			isa = PBXGroup;
 			children = (
 				21348E85251258DC00324485 /* Codables.swift */,
+				21348F4C2514F34400324485 /* PayloadBody.swift */,
 			);
-			path = Codables;
+			path = Decodables;
 			sourceTree = "<group>";
 		};
 		21348F3C2514EBC900324485 /* PolyMorphicJSONTests */ = {
@@ -237,6 +240,7 @@
 			files = (
 				21348E75251258CB00324485 /* ViewController.swift in Sources */,
 				21348E71251258CB00324485 /* AppDelegate.swift in Sources */,
+				21348F4D2514F34400324485 /* PayloadBody.swift in Sources */,
 				21348E86251258DC00324485 /* Codables.swift in Sources */,
 				21348E73251258CB00324485 /* SceneDelegate.swift in Sources */,
 			);
