@@ -13,7 +13,7 @@
 		21348E78251258CB00324485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21348E76251258CB00324485 /* Main.storyboard */; };
 		21348E7A251258CF00324485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21348E79251258CF00324485 /* Assets.xcassets */; };
 		21348E7D251258CF00324485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21348E7B251258CF00324485 /* LaunchScreen.storyboard */; };
-		21348E86251258DC00324485 /* Codables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21348E85251258DC00324485 /* Codables.swift */; };
+		21348E86251258DC00324485 /* PolymorphicPayloadContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21348E85251258DC00324485 /* PolymorphicPayloadContainer.swift */; };
 		21348F3E2514EBC900324485 /* PolyMorphicJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21348F3D2514EBC900324485 /* PolyMorphicJSONTests.swift */; };
 		21348F462514EE6C00324485 /* test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 21348F352514EB9A00324485 /* test2.json */; };
 		21348F472514EE6F00324485 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 21348E8825125ACD00324485 /* test1.json */; };
@@ -41,7 +41,7 @@
 		21348E79251258CF00324485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21348E7C251258CF00324485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21348E7E251258CF00324485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21348E85251258DC00324485 /* Codables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codables.swift; sourceTree = "<group>"; };
+		21348E85251258DC00324485 /* PolymorphicPayloadContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphicPayloadContainer.swift; sourceTree = "<group>"; };
 		21348E8825125ACD00324485 /* test1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test1.json; sourceTree = "<group>"; };
 		21348F352514EB9A00324485 /* test2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test2.json; sourceTree = "<group>"; };
 		21348F3B2514EBC900324485 /* PolyMorphicJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolyMorphicJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +106,7 @@
 		21348E84251258D500324485 /* Decodables */ = {
 			isa = PBXGroup;
 			children = (
-				21348E85251258DC00324485 /* Codables.swift */,
+				21348E85251258DC00324485 /* PolymorphicPayloadContainer.swift */,
 				21348F4C2514F34400324485 /* PayloadBody.swift */,
 			);
 			path = Decodables;
@@ -241,7 +241,7 @@
 				21348E75251258CB00324485 /* ViewController.swift in Sources */,
 				21348E71251258CB00324485 /* AppDelegate.swift in Sources */,
 				21348F4D2514F34400324485 /* PayloadBody.swift in Sources */,
-				21348E86251258DC00324485 /* Codables.swift in Sources */,
+				21348E86251258DC00324485 /* PolymorphicPayloadContainer.swift in Sources */,
 				21348E73251258CB00324485 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
